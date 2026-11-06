@@ -1,0 +1,81 @@
+Treinando Word2Vec apenas no treino...
+/workspace/replica-neural/treinar.py:107: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at ../torch/csrc/utils/tensor_numpy.cpp:206.)
+  if word in w2v.wv: model.embedding.weight[index].copy_(torch.from_numpy(w2v.wv[word]))
+BiLSTM: 5,563,050 parâmetros; {'train': {'n': 14000, 'ai': 7000, 'truncated': 1071}, 'val': {'n': 3000, 'ai': 1500, 'truncated': 205}, 'test': {'n': 3000, 'ai': 1500, 'truncated': 257}}
+Época 1: lote 100/438
+Época 1: lote 200/438
+Época 1: lote 300/438
+Época 1: lote 400/438
+{"epoch": 1, "train_loss": 0.40820849328381675, "val_loss": 0.29692304889361065, "val_accuracy": 0.8806666666666667, "seconds": 65.77021427}
+Época 2: lote 100/438
+Época 2: lote 200/438
+Época 2: lote 300/438
+Época 2: lote 400/438
+{"epoch": 2, "train_loss": 0.1884092218194689, "val_loss": 0.36927695353825885, "val_accuracy": 0.862, "seconds": 63.848978601000454}
+Época 3: lote 100/438
+Época 3: lote 200/438
+Época 3: lote 300/438
+Época 3: lote 400/438
+{"epoch": 3, "train_loss": 0.07624709401758654, "val_loss": 0.3428334306875865, "val_accuracy": 0.8786666666666667, "seconds": 66.4869359940003}
+Época 4: lote 100/438
+Época 4: lote 200/438
+Época 4: lote 300/438
+Época 4: lote 400/438
+{"epoch": 4, "train_loss": 0.027679475284181534, "val_loss": 0.4226648443539937, "val_accuracy": 0.8656666666666667, "seconds": 67.07614430800004}
+{
+  "status": "completed",
+  "seed": 123,
+  "epochs_run": 4,
+  "best_epoch": 1,
+  "selection": "menor perda de validação; parada antecipada após 3 épocas sem melhora",
+  "elapsed_seconds": 296.6579035499999,
+  "test_loss": 0.29431565809249877,
+  "test": {
+    "n": 3000,
+    "accuracy": 0.8726666666666667,
+    "precision_ai": 0.8756720430107527,
+    "recall_ai": 0.8686666666666667,
+    "f1_ai": 0.8721552878179384,
+    "f1_macro": 0.8726646293007354,
+    "confusion_matrix": [
+      [
+        1315,
+        185
+      ],
+      [
+        197,
+        1303
+      ]
+    ],
+    "roc_auc": 0.9473502222222222
+  },
+  "test_without_seen_hashes": {
+    "n": 2968,
+    "accuracy": 0.8733153638814016,
+    "precision_ai": 0.8782312925170068,
+    "recall_ai": 0.8676075268817204,
+    "f1_ai": 0.8728870858688302,
+    "f1_macro": 0.8733139257416683,
+    "confusion_matrix": [
+      [
+        1301,
+        179
+      ],
+      [
+        197,
+        1291
+      ]
+    ],
+    "roc_auc": 0.9490609561174077
+  },
+  "paper_reference": {
+    "model": "BiLSTM",
+    "seed": 123,
+    "embedding_dim": 200,
+    "accuracy": 0.8457,
+    "source": "Texto da seção Performance evaluation, referência à Tabela 6",
+    "comparison": "Descritiva: detalhes recorrentes não publicados foram reconstruídos; não são os mesmos pesos/divisões garantidos."
+  },
+  "scope": "Reconstrução parcial do experimento BiLSTM; não reproduz a bateria completa nem os transformers.",
+  "score": "softmax sem calibração; não é certeza de autoria"
+}

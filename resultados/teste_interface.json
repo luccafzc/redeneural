@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checks": [
+    "análise real de exemplo IA",
+    "erro em texto só com stopwords",
+    "limpar e desabilitar botão",
+    "análise real de exemplo humano",
+    "viewport 390 sem overflow",
+    "sem erros JavaScript"
+  ]
+}

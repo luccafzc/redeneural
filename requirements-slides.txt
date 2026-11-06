@@ -1,0 +1,4 @@
+reportlab>=4,<5
+python-pptx>=1,<2
+PyMuPDF>=1.24,<2
+matplotlib>=3.8,<4

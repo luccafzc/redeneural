@@ -1,0 +1,19 @@
+{
+  "seed": 123,
+  "embedding_dim": 200,
+  "hidden_size": 64,
+  "num_layers": 1,
+  "dropout": 0.0,
+  "max_length": 200,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "max_epochs": 30,
+  "patience": 3,
+  "min_count": 2,
+  "max_vocab": 30000,
+  "word2vec_epochs": 5,
+  "word2vec_window": 5,
+  "word2vec_sg": 1,
+  "word2vec_negative": 5,
+  "threads": 2
+}

@@ -1,0 +1,33 @@
+{
+  "n_original": 20000,
+  "class_counts": {
+    "0": 10000,
+    "1": 10000
+  },
+  "duplicates_after_preprocessing": 185,
+  "conflicting_groups_after_preprocessing": 36,
+  "overlap_unique_hashes": {
+    "train_val": 49,
+    "train_test": 28,
+    "val_test": 6
+  },
+  "empty_after_preprocessing": 23,
+  "partitions": {
+    "train": {
+      "n": 14000,
+      "ai": 7000,
+      "truncated": 1071
+    },
+    "val": {
+      "n": 3000,
+      "ai": 1500,
+      "truncated": 205
+    },
+    "test": {
+      "n": 3000,
+      "ai": 1500,
+      "truncated": 257
+    }
+  },
+  "policy": "Divisões por linhas como no notebook dos autores. Duplicatas mantidas e auditadas; avaliação adicional exclui hashes do teste presentes no treino/validação."
+}

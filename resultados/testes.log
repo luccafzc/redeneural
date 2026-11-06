@@ -1,0 +1,13 @@
+test_http_real_model_and_bad_requests (test_experimento.ArtifactTests.test_http_real_model_and_bad_requests) ... ok
+test_invalid_input (test_experimento.ArtifactTests.test_invalid_input) ... ok
+test_saved_model_matches_reported_test_prediction (test_experimento.ArtifactTests.test_saved_model_matches_reported_test_prediction) ... ok
+test_clean_and_unknown_and_truncation (test_experimento.ProtocolTests.test_clean_and_unknown_and_truncation) ... ok
+test_metrics_include_both_error_types (test_experimento.ProtocolTests.test_metrics_include_both_error_types) ... ok
+test_padding_does_not_change_prediction (test_experimento.ProtocolTests.test_padding_does_not_change_prediction) ... ok
+test_split_disjoint_balanced_reproducible (test_experimento.ProtocolTests.test_split_disjoint_balanced_reproducible) ... ok
+test_training_changes_recurrent_weights (test_experimento.ProtocolTests.test_training_changes_recurrent_weights) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.688s
+
+OK

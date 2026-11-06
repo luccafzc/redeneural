@@ -1,0 +1,29 @@
+{
+  "title": "Classifying human vs. AI text with machine learning and explainable transformer models",
+  "authors": ["Adven Masih", "Bushra Afzal", "Shamyla Firdoos", "Jabar Mahmood", "Aitizaz Ali", "Mohamed Shabbir Abdulnabi", "Daniel Musafiri Balungu"],
+  "year": 2025,
+  "journal": "Scientific Reports",
+  "volume": 15,
+  "article_number": 43310,
+  "doi": "10.1038/s41598-025-27377-z",
+  "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12686477/",
+  "publisher_url": "https://www.nature.com/articles/s41598-025-27377-z",
+  "original_pdf_url": "https://www.nature.com/articles/s41598-025-27377-z.pdf",
+  "license": "CC BY 4.0, conforme página do artigo",
+  "selected_experiment": {
+    "table": 6,
+    "model": "BiLSTM",
+    "embedding": "Word2Vec",
+    "seed": 123,
+    "embedding_dim": 200,
+    "accuracy": 0.8457,
+    "precision": 0.8315,
+    "recall": 0.8634,
+    "f1": 0.8471,
+    "note": "Valores da linha BiLSTM / 123 / 200 / Word2Vec. Comparação descritiva: arquitetura recorrente completa, embeddings e índices originais não foram disponibilizados."
+  },
+  "published_recurrent_parameters": {"learning_rate": 0.001, "batch_size": 32, "max_length": 200, "optimizer": "Adam", "max_epochs": 30, "patience": 3, "loss": "CrossEntropyLoss"},
+  "authors_repository": "https://github.com/shamylafirdoos/Gpt-vs-Human-Text-Classification",
+  "authors_commit": "82bf5888efba65bc9aed64f6b02f198d493f806d",
+  "access_date": "2026-11-06"
+}
